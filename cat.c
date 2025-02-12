@@ -10,9 +10,8 @@ int main(int args_count, char ** args)
         while (!feof(file))
         {
             putc(getc(file),stdout);
-        }
 
-
+        
         fclose(file);
     }
     return 0;
