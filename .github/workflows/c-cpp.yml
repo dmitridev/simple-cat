@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: current folder
         run: 'pwd'
+
+      - name: get content of file
+        run: 'ls'
         
       - name: print a message
         run: echo 'run gcc'
