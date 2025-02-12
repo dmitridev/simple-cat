@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print a message
-        run: gcc cat.c -o cat
+        run: gcc ../../cat.c -o cat
              
