@@ -14,7 +14,7 @@ jobs:
         run: 'pwd'
 
       - name: get content of file
-        run: 'ls -l'
+        run: ls ${{github.workspace}}
         
       - name: print a message
         run: echo 'run gcc'
