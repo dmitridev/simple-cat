@@ -13,7 +13,7 @@ jobs:
       - name: current folder
         run: 'pwd'
 
-      - name: get content of file
+      - name: get content of folder
         run: ls ${{github.workspace}}
         
       - name: print a message
