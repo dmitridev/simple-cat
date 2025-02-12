@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: current folder
         run: 'pwd'
-
+        
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        
       - name: get content of folder
         run: ls ${{github.workspace}}
         
@@ -20,5 +23,5 @@ jobs:
         run: echo 'run gcc'
       
       - name: compile
-        run: gcc ../../cat.c -o cat
+        run: gcc cat.c -o cat
              
