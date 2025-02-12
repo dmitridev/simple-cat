@@ -11,7 +11,7 @@ int main(int args_count, char ** args)
         {
             putc(getc(file),stdout);
 
-        
+        }
         fclose(file);
     }
     return 0;
