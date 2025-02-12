@@ -10,6 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: current folder
+        run: 'pwd'
+        
       - name: print a message
+        run: echo 'run gcc'
+      
+      - name: compile
         run: gcc ../../cat.c -o cat
              
